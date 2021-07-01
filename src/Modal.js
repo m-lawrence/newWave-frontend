@@ -14,16 +14,11 @@ function Modal ({handleModalToggle}){
                         <span className="input-group-text">Message Content:</span>
                         <textarea className="form-control" aria-label="With textarea"></textarea>
                         </div>
-                        {/* <p onClick={handleModalToggle}> &#x2708; </p> */}
-                        
                         <button onClick={handleModalToggle} className="bottom-btn">send </button>
                 </div>
-
-                {/* <div className="email-modal-footer">
-                </div> */}
             </div>
         </div>
-        // <h1>ARE YOU WORKING?</h1>
+       
 
     )
 }

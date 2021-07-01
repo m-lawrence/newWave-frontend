@@ -94,10 +94,7 @@ function NewItemForm({sendNewItemUp}){
                 <input type="text" onChange={handleChange} value={formData.image} name="image" className="form-control" id="floatingInput" placeholder="Image"/>
                 <label for="floatingInput">Image</label>
             </div>
-            {/* <div className="mb-3">
-                <label for="formFile" className="form-label">Image</label>
-                <input onChange={handleChange} value={formData.image} name="image" className="form-control" type="file" id="formFile"/>
-            </div> */}
+           
           <label> Select Item Category:
             <select className="form-select" id="floatingSelect" aria-label="Floating label select example" onChange={handleCategoryChange}>
                 <option value="strings">Strings</option>

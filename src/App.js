@@ -44,18 +44,6 @@ function App() {
     history.push('/')
   }
 
-//   function filterByPrice() {
-//       if (filterChange === "Low") {
-//         const priceSortedArr = filteredByCat.sort((a,b) => a.price - b.price )
-//         return priceSortedArr
-//       } else if (filterChange === "High") {
-//         const priceSortedArr = filteredByCat.sort((a,b) => b.price - a.price )
-//         return priceSortedArr
-//       } 
-//         return filteredByCat
-// }
-
-
   function saleTypeSelection() {
     if (saleChange === "for_sale") {
        const newArr = filteredByCat.filter(listing => (listing.for_sale === true))
@@ -80,7 +68,7 @@ function App() {
           } 
         return newArr
     }
-    // return filteredByCat
+    
     else if (saleChange === "all") {
       const newArr = filteredByCat
          if (filterChange === "Low") {
@@ -142,7 +130,6 @@ function App() {
           setSelectedCat={setSelectedCat} 
           catClicked={catClicked} 
           setCatClicked={setCatClicked}
-          // filterByPrice={filterByPrice}
           filterChange={filterChange}
           setFilterChange={setFilterChange}
           setSaleChange={setSaleChange}

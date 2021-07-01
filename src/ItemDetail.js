@@ -108,12 +108,10 @@ function ItemDetail({ removeDeleted, editListing }){
             {listingDetail.barter ? <p className="detailsP"><strong>Willing to trade for: </strong>  {listingDetail.barter_description}</p> : null}
             <p className="detailsP"><strong>Located: </strong>{listingDetail.location}</p>
             <div className="iconBtn">
-                {/* <button>Message seller</button> */}
                 <p className="icon" onClick={handleModalToggle}>&#x2709; </p>
               
                 <p className="icon" data-toggle="modal" data-target="#myModal" onClick={handleUpdate}> &#x270E; </p>
-                {/* <button onClick={handleUpdate}>Update Listing</button> */}
-                {/* <button onClick={handleDlt}>Delete Listing</button> */}
+                
                 <p className="icon" onClick={handleDlt}> &#x26D4; </p>
             </div>
             {clickModal? <Modal handleModalToggle={handleModalToggle}/> : null}
@@ -144,10 +142,7 @@ function ItemDetail({ removeDeleted, editListing }){
                             <input type="text" onChange={handleInfoChange} value={editFormData.image} name="image" className="form-control" id="floatingInput" placeholder="Image"/>
                             <label for="floatingInput">Image</label>
                         </div>
-                        {/* <div className="mb-3">
-                            <label for="formFile" className="form-label">Image</label>
-                            <input onChange={handleChange} value={formData.image} name="image" className="form-control" type="file" id="formFile"/>
-                        </div> */}
+                       
                     <label> Select Item Category:
                         <select className="form-select" id="floatingSelect" aria-label="Floating label select example" onChange={handleEditCategoryChange}>
                             <option value="strings">Strings</option>

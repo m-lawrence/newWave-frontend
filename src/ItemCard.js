@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom'
-import ItemDetail from './ItemDetail';
+
 
 
 function ItemCard({ listing }){
@@ -22,8 +22,6 @@ function ItemCard({ listing }){
                 <p className="card-text">Open to trade: {barter ? "Yes" : "No"}</p>
                 <p className="card-text">{barter ? "Open to trade for: " + barter_description : null}</p>
                 <button id="moreBtn" onClick={handleItemClick}>See more details</button>
-                
-                {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
             </div>
         </div>
 
